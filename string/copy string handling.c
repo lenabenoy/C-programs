@@ -4,7 +4,7 @@
 
 int main() {
     // Write C code here
-    char str1[100],str2[100
+    char str1[100],str2[100];
     printf("enter a string\n");
     fgets(str1,sizeof(str1),stdin);
     strcpy(str2,str1);
