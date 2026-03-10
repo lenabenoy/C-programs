@@ -16,6 +16,6 @@ int main()
     cylinderArea = 2 * PI * r * (r + h);
 
     printf("Area of Circle\n = %.2f",circleArea);
-    printf("\nArea of           cylinder\n=%.2f",cylinderArea);
-    return 0;}
+    printf("\ncylinderarea\n=%.2f",cylinderArea);
+      return 0;}
     
