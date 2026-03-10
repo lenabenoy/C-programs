@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#define PI 3.14159
+
+int main()
+{
+    float r, h, circleArea, cylinderArea;
+
+    printf("Enter radius: ");
+    scanf("%f", &r);
+
+    printf("Enter height: ");
+    scanf("%f", &h);
+
+    circleArea = PI * r * r;
+    cylinderArea = 2 * PI * r * (r + h);
+
+    printf("Area of Circle\n = %.2f",circleArea);
+    printf("\nArea of           cylinder\n=%.2f",cylinderArea);
+    return 0;}
+    
