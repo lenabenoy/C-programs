@@ -1,0 +1,20 @@
+#include <stdio.h>
+int power(int b,int exp)
+{
+    if(exp==0)
+    return 1;
+    else
+    return b*power(b,exp-1);
+}
+int main() {
+    // Write C code here
+    int b,exp;
+    printf("enter the base");
+    scanf("%d",&b);
+    printf("enter the exponent");
+    scanf("%d",&exp);
+    int result=power(b,exp);
+    printf("power=%d",result);
+
+    return 0;
+}
