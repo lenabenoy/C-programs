@@ -1,0 +1,21 @@
+ 
+#include <stdio.h>
+
+int main() {
+    int n,i,arr[10];
+    int *p=arr;
+    printf("enter the no of elements ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum+= *(p+i);
+    }
+    printf("sum=%d",sum);
+
+    return 0;
+}
