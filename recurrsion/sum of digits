@@ -1,0 +1,19 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int sumdigits(int n)
+{
+if(n==0)
+return 0;
+else
+return(n%10)+sumdigits(n/10);
+}
+
+int main() {
+    int num,sum;
+    printf("enter the number");
+    scanf("%d",&num);
+    sum=sumdigits(num);
+    printf("sum of digits=%d",sum);
+
+    return 0;
+}
