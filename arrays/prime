@@ -1,0 +1,40 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n,arr[100],i,j,flag;
+    printf("enter the limit");
+    scanf("%d",&n);
+    printf("enter the elements");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("prime numbers are");
+    for(i=0;i<n;i++)
+    {
+        flag=1;
+        
+            if(arr[i]<=1)
+            {
+                flag=0;
+            }
+        
+        for(j=2;j<arr[i];j++)
+        {
+            if(arr[i]%j==0)
+            {
+                flag=0;
+                break;
+            }
+        }
+    
+    if(flag==1)
+    {
+    printf("%d\n",arr[i]);
+    }
+    }
+
+
+    return 0;
+}
